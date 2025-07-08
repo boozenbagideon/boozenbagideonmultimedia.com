@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boozenba Gideon Multimedia</title>
+  <link rel="icon" href="icon.jpg" type="image/jpg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    nav button:hover,
+    nav button.active {
+      background-color: #222;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      background-color: white;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    img, video {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin-top: 1rem;
+    }
+    .offer {
+      background: #eee;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .offer img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+    }
+    .school-form {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+    .school-form button {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Boozenba Gideon Multimedia</h1>
+  </header>
+  <nav>
+    <button class="tab-button active" data-tab="home">Home</button>
+    <button class="tab-button" data-tab="services">Services</button>
+    <button class="tab-button" data-tab="contact">Contact</button>
+  </nav>
+  <main>
+    <section id="home" class="tab-content active">
+      <h2>Welcome to Boozenba Gideon Multimedia</h2>
+      <p>Boozenba Gideon Multimedia is a website and graphic company that design website and develop softwares that suits our customers ideas and business. 
+        It is located at Obuasi Anyinam. Ampong Kofi Kwarteng is the CEO of Boozenba Gideon Multimedia.</p>
+      <img src="i/home-banner.jpg" alt="Smart ICT Banner">
+      <video id="introVideo" controls muted>
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="services" class="tab-content">
+      <h2>Our Services</h2>
+      <div class="offer">
+        <h3>🌐 Website Development</h3>
+        <p>Professional websites built using HTML, CSS, JavaScript and CMS platforms. Mobile-friendly, fast, and SEO-ready.</p>
+        <img src="images/web-dev.jpg" alt="Website Development">
+      </div>
+      <div class="offer">
+        <h3>🎨 Graphic Design</h3>
+        <p>Logo design, banners, flyers, and branding for businesses and events. Delivered in high resolution.</p>
+        <img src="images/graphic-design.jpg" alt="Graphic Design">
+      </div>
+      <div class="offer">
+        <h3>📈 Social Media Boosting</h3>
+        <p>Boost your business or personal pages. Real engagement, followers and reach on Facebook, Instagram, TikTok, etc.</p>
+        <img src="images/social-boost.jpg" alt="Social Media Boosting">
+      </div>
+      <div class="offer">
+        <h3>🛂 Online Passport Registration</h3>
+        <p>Fast and secure Ghana passport application processing with form filling and scheduling.</p>
+        <img src="images/passport.jpg" alt="Passport Service">
+      </div>
+
+      <h3>🎓 School Forms & Offers</h3>
+      <div class="school-form">
+        <h4>University of Ghana Admission Form</h4>
+        <p>Price: GHS 220</p>
+        <a href="https://apply.ug.edu.gh/admissions/undergrad/login" target="_blank">Visit Portal</a><br>
+        <button onclick="alert('Payment processing not yet active.')">Buy Form</button>
+
+        <h4>University of KNUST Form</h4>
+        <p>Price: GHS 220</p>
+        <a href="https://apps.knust.edu.gh/admissions/apply" target="_blank">Visit Portal</a><br>
+        <button onclick="alert('Payment processing not yet active.')">Buy Form</button>
+
+        <h4>University Of Cape Coast Form</h4>
+        <p>Price: GHS 220</p>
+        <a href="https://apply.ucc.edu.gh/" target="_blank">Visit Portal</a><br>
+        <button onclick="alert('Payment processing not yet active.')">Buy Form</button>
+      </div>
+      <div class="school-form">
+        <h4>Teacher Training College Form</h4>
+        <p>Price: GHS 150</p>
+        <a href="https://admission.coeportal.edu.gh/" target="_blank">Visit Portal</a><br>
+        <button onclick="alert('Voucher will be emailed after payment.')">Buy Form</button>
+      </div>
+      <div class="school-form">
+        <h4>Nursing Training College Form</h4>
+        <p>Price: GHS 200</p>
+        <a href="https://healthtraining.gov.gh" target="_blank">Visit Portal</a><br>
+        <button onclick="alert('Voucher will be sent via WhatsApp.')">Buy Form</button>
+      </div>
+      <p>💡 After purchase, voucher codes will be delivered via email or WhatsApp for official registration.</p>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact Us</h2>
+      <p>WhatsApp: <a href="https://wa.me/233596359642" target="_blank">+233 59 635 9642 +233 20 364 8094 </a></p>
+      <p>Email: <a href="mailto:boozenbagideon@gmail.com">boozenbagideon@gmail.com</a></p>
+      <p>Location: <a href="Location">Obuasi-Anyinam</a></p>
+      <img src="images/contact.jpg" alt="Contact Us" />
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Boozenba Gideon Multimedia. All rights reserved.</p>
+    <p>
+      <a href="https://wa.me/233596359642" target="_blank" title="WhatsApp">📱</a>
+      <a href="https://facebook.com/boozenbagideon" target="_blank" title="Facebook">📘</a>
+      <a href="https://instagram.com/boozenbagideon" target="_blank" title="Instagram">📸</a>
+      <a href="mailto:boozenbagideon@gmail.com" target="_blank" title="Email">✉️</a>
+    </p>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
+    const video = document.getElementById("introVideo");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        contents.forEach(content => content.classList.remove("active"));
+        
+        button.classList.add("active");
+        const tabId = button.getAttribute("data-tab");
+        const activeTab = document.getElementById(tabId);
+        activeTab.classList.add("active");
+
+        if (tabId === "home" && video) {
+          video.currentTime = 0;
+          video.play().catch(err => {
+            console.log("Autoplay blocked by browser:", err);
+          });
+        } else if (video) {
+          video.pause();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
